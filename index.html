@@ -1,1 +1,109 @@
-Mymarketplace 
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Boutique en ligne de planches de surf, accessoires et vêtements - Surf pour les passionnés bretons et anglais.">
+    <title>SurfShop - Planches de Surf & Accessoires</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- En-tête -->
+    <header>
+        <div class="logo">
+            <h1>SurfShop</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#shop">Boutique</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section d'accueil -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h2>Bienvenue chez SurfShop</h2>
+            <p>Découvrez nos planches de surf, vêtements et accessoires, conçus pour les surfeurs bretons et anglais !</p>
+            <a href="#shop" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Section produits -->
+    <section id="shop">
+        <h2>Nos Produits</h2>
+        <div class="product-container">
+            <!-- Produit 1 -->
+            <div class="product-card">
+                <img src="surfboard1.jpg" alt="Planche de Surf">
+                <h3>Planche de Surf - Modèle Bretagne</h3>
+                <p>Idéale pour les vagues bretonnes.</p>
+                <span class="price">€499</span>
+                <button class="btn">Ajouter au panier</button>
+            </div>
+            <!-- Produit 2 -->
+            <div class="product-card">
+                <img src="surfboard2.jpg" alt="Planche de Surf">
+                <h3>Planche de Surf - Modèle UK</h3>
+                <p>Optimale pour les vagues du Royaume-Uni.</p>
+                <span class="price">£450</span>
+                <button class="btn">Ajouter au panier</button>
+            </div>
+            <!-- Produit 3 -->
+            <div class="product-card">
+                <img src="surfboard3.jpg" alt="Planche de Surf">
+                <h3>Planche de Surf - Modèle Mixte</h3>
+                <p>Adaptée aux conditions variées.</p>
+                <span class="price">€550</span>
+                <button class="btn">Ajouter au panier</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="about">
+        <h2>À propos de SurfShop</h2>
+        <p>SurfShop est une boutique en ligne dédiée aux passionnés de surf, en Bretagne comme au Royaume-Uni. Nous sélectionnons des produits de qualité pour vous accompagner dans vos aventures sur l'eau. Que vous soyez débutant ou expert, nous avons ce qu'il vous faut !</p>
+    </section>
+
+    <!-- Formulaire de contact -->
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <form action="submit_form.php" method="POST">
+            <div class="form-group">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 SurfShop - Tous droits réservés</p>
+            <ul>
+                <li><a href="#">Conditions d'utilisation</a></li>
+                <li><a href="#">Politique de confidentialité</a></li>
+                <li><a href="#">Livraison et retours</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
